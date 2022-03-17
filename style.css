@@ -2,6 +2,7 @@ body {
     font-family: Work Sans;
     font-weight: 600;
     margin: 0;
+    max-width: 100vp;
 }
 
 header {
@@ -30,11 +31,21 @@ header li {
     padding: 5px;
 }
 
+.special {
+    background-color: #1f211c;
+    border-radius: 10px;
+}
+
 main {
     display: flex;
-    flex-direction: row;
+    flex-wrap: row;
     justify-content: space-between;
-    align-items: center;
+    margin: 30px;
+}
+
+.one {
+    min-width: 70vh;
+    max-width: 70vh;
 }
 
 main li {
@@ -43,47 +54,27 @@ main li {
     background-color: #70a48b;
     border : #1f211c solid 1px;
     margin: 5px;
-}
-
-section {
-    margin: 30px;
-}
-
-.one {
-    min-width: 40vh;
-    max-width: 66vh;
-}
-
-section li {
     padding: 20px;
     color: white;
 }
 
-
 .images {
     display: flex;
-    flex-wrap: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.special {
-    background-color: #1f211c;
-    border-radius: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center;
 }
 
 footer {
     background-color: #70a48b;
     margin: 0;
-    position: static;
     left: 0px;
     bottom: 0px;
     width: 100%;
 }
 
-@media screen and (max-width: 600px) {
-    .one {
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
+@media screen and (min-width: 480px) {
+}
+ 
+@media screen and (min-width: 992px) {
+}
