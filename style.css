@@ -10,10 +10,10 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin = 0;
 }
 
 header ul {
+    border-radius: 10px;
     border: white solid 2px;
     color: white;
     list-style-type: none;
@@ -21,6 +21,13 @@ header ul {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 15px;
+    margin: 20px;
+}
+
+header li {
+    margin: 10px;
+    padding: 5px;
 }
 
 main {
@@ -31,6 +38,7 @@ main {
 }
 
 main li {
+    border-radius: 10px;
     list-style-type: none;
     background-color: #70a48b;
     border : #1f211c solid 1px;
@@ -41,16 +49,41 @@ section {
     margin: 30px;
 }
 
+.one {
+    min-width: 40vh;
+    max-width: 66vh;
+}
+
 section li {
     padding: 20px;
     color: white;
 }
 
+
+.images {
+    display: flex;
+    flex-wrap: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .special {
     background-color: #1f211c;
+    border-radius: 10px;
 }
 
 footer {
     background-color: #70a48b;
     margin: 0;
+    position: static;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
 }
+
+@media screen and (max-width: 600px) {
+    .one {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
