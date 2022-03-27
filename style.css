@@ -99,9 +99,11 @@ footer {
     .text {
         flex: 1 1 0;
         min-width: 33%;
+        margin: 15px;    
     }
 
     .images {
         flex: 2 1 0;
+        flex-wrap: wrap;
     }
 }
