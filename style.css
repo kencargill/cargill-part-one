@@ -2,17 +2,21 @@
     header {
         background-color: #70a48b;
         display: flex;
-        flex-direction: column;
+        flex-wrap: column;
         justify-content: space-between;
         align-items: center;
     }
 
     .text-images {
         display: flex;
-        flex-wrap: column;
+        flex-direction: column;
         justify-content: space-between;
         margin: 50px;
     }
+
+    .round {
+        width: 45%;
+        }
 }
 
 header {
@@ -104,6 +108,10 @@ footer {
 
     .images {
         flex: 2 1 0;
-        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .round {
+    width: 30%;
     }
 }
