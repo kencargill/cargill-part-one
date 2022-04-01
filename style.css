@@ -2,7 +2,7 @@
     header {
         background-color: #70a48b;
         display: flex;
-        flex-wrap: column;
+        flex-direction: column;
         justify-content: space-between;
         align-items: center;
     }
